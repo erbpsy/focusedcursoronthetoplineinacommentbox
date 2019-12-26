@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>How to focused cursor on the top line in a comment box?</h1>
+StackOverflow Answer : <a href="https://stackoverflow.com/questions/59486171/how-to-focused-cursor-on-the-top-line-in-a-comment-box/59487273#59487273" target="_blank" > StackOverflow Answer</a>
+</br>
+</br>
+
+
+<textarea rows="4" cols="50" id="comment-box">
+Best Regards,
+John Doe
+</textarea>
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+
+$(function(){   
+	   $("#comment-box").text("\n" + $("#comment-box").text());
+	   $("#comment-box").focus();    
+});
+</script>
+</html>
